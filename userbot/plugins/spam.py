@@ -228,8 +228,8 @@ async def tmeme(event):
             )
 
 
-@bot.on(admin_cmd("delayspam (.*)"))
-@bot.on(sudo_cmd(pattern="delayspam (.*)", allow_sudo=True))
+@bot.on(admin_cmd("dspam (.*)"))
+@bot.on(sudo_cmd(pattern="dspam (.*)", allow_sudo=True))
 async def spammer(event):
     if event.fwd_from:
         return
